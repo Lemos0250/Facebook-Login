@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
-<body>
+<body src="img/Feliz.png">
 
 <div class="container">
-    <div>
+    <div class="inicio">
         <img class ="logo" src="./img/facebook.svg" alt="Facebook">
     </div>
       <div>
@@ -19,13 +19,20 @@
             <h2>Entrar no Facebook</h2>
             <input type="text" placeholder="Email ou Telefone" autocomplete="on">
             <input type="password" placeholder="Senha" autocomplete="on">
-            <button>Entrar</button>
+            <button class="entrar">Entrar</button>
             <a href="#">Esqueceu a conta?</a>
-            <button>Criar nova conta</button>
+            <button class="criar">Criar nova conta</button>
             </input>
         </form>
         <p></p>
       </div>
     </div>
+    <footer>Facebook  © <span id="ano">2022</span></footer>
+    <script>
+      const ano = document.getElementById('year');
+      const ano_atual = new Date();
+
+      ano.innerHTML = ano_atual.getFullYear();
+    </script>
 </body>
 </html>
